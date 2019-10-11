@@ -124,7 +124,25 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
-          ],
+            Text(
+              '文本是视图系统中的常见控件，用来显示一段特定样式的字符串，就比如是 iOS 中的 UILabel。',
+              textAlign: TextAlign.center,// 居中显示
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.red),//20 号红色粗体展示
+            ),
+
+            Text.rich(
+              TextSpan(
+                  children: <TextSpan>[
+                    TextSpan(text:'文本是视图系统中常见的控件，它用来显示一段特定样式的字符串，类似', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.red)), // 第 1 个片段，红色样式
+                    TextSpan(text:'Android', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black)), // 第 1 个片段，黑色样式
+                    TextSpan(text:'中的', style:TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.red)), // 第 1 个片段，红色样式
+                    TextSpan(text:'TextView', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black)) // 第 1 个片段，黑色样式
+                  ]),
+              textAlign: TextAlign.center,
+            ),
+
+
+    ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
