@@ -110,9 +110,17 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
            FloatingActionButton(onPressed: () => print('FloatingActionButton pressed'),child: Text('Btn'),),
            FlatButton(onPressed: () => print('FlatButton pressed'),child: Text('Btn'),),
            RaisedButton(onPressed: () => print('RaisedButton pressed'),child: Text('Btn'),),
+          FlatButton(
+              color: Colors.yellow, // 设置背景色为黄色
+              shape:BeveledRectangleBorder(borderRadius: BorderRadius.circular(10.0)), // 设置斜角矩形边框
+              colorBrightness: Brightness.light, // 确保文字按钮为深色
+              onPressed: () => print('FlatButton pressed'),
+              child: Row(children: <Widget>[Icon(Icons.add), Text("Add")],)
+          ),
 
 
-    Text.rich(
+
+            Text.rich(
               TextSpan(
                   children: <TextSpan>[
                     TextSpan(text:'文本是视图系统中常见的控件，它用来显示一段特定样式的字符串，类似', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.red)), // 第 1 个片段，红色样式
