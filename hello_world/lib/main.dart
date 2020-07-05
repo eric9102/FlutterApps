@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp2());
+  runApp(MyApp());
 }
 
 class NewRoute extends StatelessWidget{
@@ -34,7 +34,7 @@ class TipRoute extends StatelessWidget {
                 Text(text),
                 RaisedButton(
                   onPressed: ()=>Navigator.pop(context, "我是返回值"),
-                  child: Text("返回"),
+                  child: Text("返回带着返回值"),
                 )
               ],
             ),
@@ -44,7 +44,7 @@ class TipRoute extends StatelessWidget {
   }
 }
 
-class MyApp2 extends StatelessWidget {
+class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
