@@ -14,14 +14,22 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - MJRefresh (3.4.3)
+  - my_flutter (0.0.1):
+    - Flutter
   - SDWebImage (5.8.3):
     - SDWebImage/Core (= 5.8.3)
   - SDWebImage/Core (5.8.3)
 
 DEPENDENCIES:
   - AFNetworking
+  - Flutter (from `../my_flutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../my_flutter/.ios/Flutter/FlutterPluginRegistrant`)
   - MJRefresh
+  - my_flutter (from `../my_flutter/.ios/Flutter`)
   - SDWebImage
 
 SPEC REPOS:
@@ -30,11 +38,22 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../my_flutter/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../my_flutter/.ios/Flutter/FlutterPluginRegistrant"
+  my_flutter:
+    :path: "../my_flutter/.ios/Flutter"
+
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
   MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  my_flutter: c0ca42721b3297bc8d54e93782ac00730d3bd1a1
   SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
 
-PODFILE CHECKSUM: 82b10c36ea4baf12219adaa7fe1e214375516026
+PODFILE CHECKSUM: a5759562fc55dc1731f6b4509cef217bfa658160
 
 COCOAPODS: 1.9.3

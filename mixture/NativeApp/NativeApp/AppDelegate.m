@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <flutter_boost/FlutterBoost.h>
 
 @interface AppDelegate ()
 
