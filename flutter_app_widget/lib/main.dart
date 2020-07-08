@@ -152,7 +152,21 @@ class NewRoute extends StatelessWidget{
         title: Text("new route"),
       ),
       body: Center(
-        child: Text("This is a new route"),
+        child: Stack(children: <Widget>
+        [
+            Container(color: Colors.yellow, width: 300, height: 300),//黄色容器
+            Positioned(
+              left: 18.0,
+              top: 18.0,
+              child: Container(color: Colors.green, width: 50, height: 50),//叠加在黄色容器之上的绿色控件
+            ),
+            Positioned(
+              left: 18.0,
+              top:70.0,
+              child: Text("Stack提供了层叠布局的容器"),//叠加在黄色容器之上的文本
+            )
+          ],
+        ),
       ),
     );
   }
