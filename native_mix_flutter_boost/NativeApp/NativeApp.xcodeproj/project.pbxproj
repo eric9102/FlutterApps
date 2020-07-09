@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		177486F809EA486E772E4E1A /* libPods-NativeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3B023A1A3FE913FAFBD5E0 /* libPods-NativeApp.a */; };
 		798350A524B74E4700048E93 /* PlatformRouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 798350A124B74E4700048E93 /* PlatformRouterImp.m */; };
+		798350A924B7591400048E93 /* NativePageOneVCL.m in Sources */ = {isa = PBXBuildFile; fileRef = 798350A824B7591400048E93 /* NativePageOneVCL.m */; };
 		79B9FF0524B4432700343E05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9FF0424B4432700343E05 /* AppDelegate.m */; };
-		79B9FF0B24B4432700343E05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9FF0A24B4432700343E05 /* ViewController.m */; };
+		79B9FF0B24B4432700343E05 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9FF0A24B4432700343E05 /* RootViewController.m */; };
 		79B9FF0E24B4432700343E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B9FF0C24B4432700343E05 /* Main.storyboard */; };
 		79B9FF1024B4432F00343E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B9FF0F24B4432F00343E05 /* Assets.xcassets */; };
 		79B9FF1324B4432F00343E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B9FF1124B4432F00343E05 /* LaunchScreen.storyboard */; };
@@ -23,11 +24,13 @@
 		615632F9189F25B40DB6BF41 /* Pods-NativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeApp.release.xcconfig"; path = "Target Support Files/Pods-NativeApp/Pods-NativeApp.release.xcconfig"; sourceTree = "<group>"; };
 		798350A124B74E4700048E93 /* PlatformRouterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformRouterImp.m; sourceTree = "<group>"; };
 		798350A324B74E4700048E93 /* PlatformRouterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformRouterImp.h; sourceTree = "<group>"; };
+		798350A724B7591400048E93 /* NativePageOneVCL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativePageOneVCL.h; sourceTree = "<group>"; };
+		798350A824B7591400048E93 /* NativePageOneVCL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativePageOneVCL.m; sourceTree = "<group>"; };
 		79B9FF0024B4432700343E05 /* NativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B9FF0324B4432700343E05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79B9FF0424B4432700343E05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		79B9FF0924B4432700343E05 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		79B9FF0A24B4432700343E05 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		79B9FF0924B4432700343E05 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		79B9FF0A24B4432700343E05 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		79B9FF0D24B4432700343E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79B9FF0F24B4432F00343E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B9FF1224B4432F00343E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,13 +62,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		798350A024B74E4700048E93 /* BoostTool */ = {
+		798350A024B74E4700048E93 /* PlatformRouterImp */ = {
 			isa = PBXGroup;
 			children = (
 				798350A324B74E4700048E93 /* PlatformRouterImp.h */,
 				798350A124B74E4700048E93 /* PlatformRouterImp.m */,
 			);
-			path = BoostTool;
+			path = PlatformRouterImp;
 			sourceTree = "<group>";
 		};
 		79B9FEF724B4432700343E05 = {
@@ -89,11 +92,13 @@
 		79B9FF0224B4432700343E05 /* NativeApp */ = {
 			isa = PBXGroup;
 			children = (
-				798350A024B74E4700048E93 /* BoostTool */,
+				798350A024B74E4700048E93 /* PlatformRouterImp */,
 				79B9FF0324B4432700343E05 /* AppDelegate.h */,
 				79B9FF0424B4432700343E05 /* AppDelegate.m */,
-				79B9FF0924B4432700343E05 /* ViewController.h */,
-				79B9FF0A24B4432700343E05 /* ViewController.m */,
+				79B9FF0924B4432700343E05 /* RootViewController.h */,
+				79B9FF0A24B4432700343E05 /* RootViewController.m */,
+				798350A724B7591400048E93 /* NativePageOneVCL.h */,
+				798350A824B7591400048E93 /* NativePageOneVCL.m */,
 				79B9FF0C24B4432700343E05 /* Main.storyboard */,
 				79B9FF0F24B4432F00343E05 /* Assets.xcassets */,
 				79B9FF1124B4432F00343E05 /* LaunchScreen.storyboard */,
@@ -243,10 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B9FF0B24B4432700343E05 /* ViewController.m in Sources */,
+				79B9FF0B24B4432700343E05 /* RootViewController.m in Sources */,
 				79B9FF0524B4432700343E05 /* AppDelegate.m in Sources */,
 				798350A524B74E4700048E93 /* PlatformRouterImp.m in Sources */,
 				79B9FF1624B4432F00343E05 /* main.m in Sources */,
+				798350A924B7591400048E93 /* NativePageOneVCL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
