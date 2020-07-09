@@ -19,13 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    FlutterMethodChannel* channel = [FlutterMethodChannel methodChannelWithName:@"samples.chenhang/navigation" binaryMessenger:NULL];
+    FlutterMethodChannel* channel = [FlutterMethodChannel methodChannelWithName:@"com.example.flutterOne" binaryMessenger:self];
     
     [channel setMethodCallHandler:^(FlutterMethodCall* call, FlutterResult result) {
         // Note: this method is invoked on the UI thread.
         if([call.method isEqualToString:@"openNativePage"]) {
     
-            NativeViewControllerTwo *nativeTwo = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@""];
+            NativeViewControllerTwo *nativeTwo = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"NativeViewControllerTwo"];
             [self.navigationController pushViewController:nativeTwo animated:YES];
             result(@0);
         }
