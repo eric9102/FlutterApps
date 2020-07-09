@@ -7,7 +7,7 @@ load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 platform :ios, '11.0'
 inhibit_all_warnings!
 
-target 'NativeApp' do
+target 'NativeOne' do
   
 install_all_flutter_pods(flutter_application_path)
 
