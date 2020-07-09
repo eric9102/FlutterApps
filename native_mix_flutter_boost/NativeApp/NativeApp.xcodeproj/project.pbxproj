@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		177486F809EA486E772E4E1A /* libPods-NativeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3B023A1A3FE913FAFBD5E0 /* libPods-NativeApp.a */; };
+		798350A524B74E4700048E93 /* PlatformRouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 798350A124B74E4700048E93 /* PlatformRouterImp.m */; };
 		79B9FF0524B4432700343E05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9FF0424B4432700343E05 /* AppDelegate.m */; };
 		79B9FF0B24B4432700343E05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B9FF0A24B4432700343E05 /* ViewController.m */; };
 		79B9FF0E24B4432700343E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B9FF0C24B4432700343E05 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		0E3B023A1A3FE913FAFBD5E0 /* libPods-NativeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		615632F9189F25B40DB6BF41 /* Pods-NativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeApp.release.xcconfig"; path = "Target Support Files/Pods-NativeApp/Pods-NativeApp.release.xcconfig"; sourceTree = "<group>"; };
+		798350A124B74E4700048E93 /* PlatformRouterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformRouterImp.m; sourceTree = "<group>"; };
+		798350A324B74E4700048E93 /* PlatformRouterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformRouterImp.h; sourceTree = "<group>"; };
 		79B9FF0024B4432700343E05 /* NativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B9FF0324B4432700343E05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79B9FF0424B4432700343E05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +59,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		798350A024B74E4700048E93 /* BoostTool */ = {
+			isa = PBXGroup;
+			children = (
+				798350A324B74E4700048E93 /* PlatformRouterImp.h */,
+				798350A124B74E4700048E93 /* PlatformRouterImp.m */,
+			);
+			path = BoostTool;
+			sourceTree = "<group>";
+		};
 		79B9FEF724B4432700343E05 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +89,7 @@
 		79B9FF0224B4432700343E05 /* NativeApp */ = {
 			isa = PBXGroup;
 			children = (
+				798350A024B74E4700048E93 /* BoostTool */,
 				79B9FF0324B4432700343E05 /* AppDelegate.h */,
 				79B9FF0424B4432700343E05 /* AppDelegate.m */,
 				79B9FF0924B4432700343E05 /* ViewController.h */,
@@ -111,7 +124,6 @@
 				79B9FEFC24B4432700343E05 /* Sources */,
 				79B9FEFD24B4432700343E05 /* Frameworks */,
 				79B9FEFE24B4432700343E05 /* Resources */,
-				F6ABFED5034FC8AFE47D822B /* [CP] Copy Pods Resources */,
 				EAFCF2D3D79369CAC64310DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -224,23 +236,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NativeApp/Pods-NativeApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6ABFED5034FC8AFE47D822B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NativeApp/Pods-NativeApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NativeApp/Pods-NativeApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NativeApp/Pods-NativeApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,6 +245,7 @@
 			files = (
 				79B9FF0B24B4432700343E05 /* ViewController.m in Sources */,
 				79B9FF0524B4432700343E05 /* AppDelegate.m in Sources */,
+				798350A524B74E4700048E93 /* PlatformRouterImp.m in Sources */,
 				79B9FF1624B4432F00343E05 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

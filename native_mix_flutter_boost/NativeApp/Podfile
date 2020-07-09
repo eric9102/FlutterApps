@@ -11,9 +11,9 @@ target 'NativeApp' do
   
 install_all_flutter_pods(flutter_application_path)
 
-pod 'AFNetworking'
-pod 'MJRefresh'
-pod 'SDWebImage'
+#pod 'AFNetworking'
+#pod 'MJRefresh'
+#pod 'SDWebImage'
 
 
 end

@@ -1,46 +1,18 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
   - Flutter (1.0.0)
   - flutter_boost (0.0.2):
     - Flutter
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
     - flutter_boost
-  - MJRefresh (3.3.1)
   - my_flutter (0.0.1):
     - Flutter
-  - SDWebImage (5.5.2):
-    - SDWebImage/Core (= 5.5.2)
-  - SDWebImage/Core (5.5.2)
 
 DEPENDENCIES:
-  - AFNetworking
   - Flutter (from `../my_flutter/.ios/Flutter/engine`)
   - flutter_boost (from `../my_flutter/.ios/Flutter/.symlinks/flutter_boost/ios`)
   - FlutterPluginRegistrant (from `../my_flutter/.ios/Flutter/FlutterPluginRegistrant`)
-  - MJRefresh
   - my_flutter (from `../my_flutter/.ios/Flutter`)
-  - SDWebImage
-
-SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
-    - AFNetworking
-    - MJRefresh
-    - SDWebImage
 
 EXTERNAL SOURCES:
   Flutter:
@@ -53,14 +25,11 @@ EXTERNAL SOURCES:
     :path: "../my_flutter/.ios/Flutter"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_boost: a7cfa776b75329d5e7d101d0cd33e75042bcde69
   FlutterPluginRegistrant: 717df6b322c7d500c17eeff54284c74ed5410c7b
-  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   my_flutter: c0ca42721b3297bc8d54e93782ac00730d3bd1a1
-  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
 
-PODFILE CHECKSUM: a5759562fc55dc1731f6b4509cef217bfa658160
+PODFILE CHECKSUM: e209b7ddb8a8bce046c42d11ad7ca5c510984d71
 
 COCOAPODS: 1.8.4
