@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		7962835324B6C0FD0086D8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7962835224B6C0FD0086D8D1 /* Assets.xcassets */; };
 		7962835624B6C0FD0086D8D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7962835424B6C0FD0086D8D1 /* LaunchScreen.storyboard */; };
 		7962835924B6C0FD0086D8D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7962835824B6C0FD0086D8D1 /* main.m */; };
+		7962836124B6F28C0086D8D1 /* FlutterHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7962836024B6F28C0086D8D1 /* FlutterHomeViewController.m */; };
+		7962836424B6F3D90086D8D1 /* NativeViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7962836324B6F3D90086D8D1 /* NativeViewControllerTwo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		7962835524B6C0FD0086D8D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7962835724B6C0FD0086D8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7962835824B6C0FD0086D8D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7962835F24B6F28C0086D8D1 /* FlutterHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlutterHomeViewController.h; sourceTree = "<group>"; };
+		7962836024B6F28C0086D8D1 /* FlutterHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterHomeViewController.m; sourceTree = "<group>"; };
+		7962836224B6F3D90086D8D1 /* NativeViewControllerTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeViewControllerTwo.h; sourceTree = "<group>"; };
+		7962836324B6F3D90086D8D1 /* NativeViewControllerTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeViewControllerTwo.m; sourceTree = "<group>"; };
 		7EF3B31636371C143DDC839B /* Pods-NativeOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeOne.debug.xcconfig"; path = "Target Support Files/Pods-NativeOne/Pods-NativeOne.debug.xcconfig"; sourceTree = "<group>"; };
 		B41AAA59C7FAE5457BE65C5F /* libPods-NativeOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +88,10 @@
 				7962835424B6C0FD0086D8D1 /* LaunchScreen.storyboard */,
 				7962835724B6C0FD0086D8D1 /* Info.plist */,
 				7962835824B6C0FD0086D8D1 /* main.m */,
+				7962835F24B6F28C0086D8D1 /* FlutterHomeViewController.h */,
+				7962836024B6F28C0086D8D1 /* FlutterHomeViewController.m */,
+				7962836224B6F3D90086D8D1 /* NativeViewControllerTwo.h */,
+				7962836324B6F3D90086D8D1 /* NativeViewControllerTwo.m */,
 			);
 			path = NativeOne;
 			sourceTree = "<group>";
@@ -92,7 +102,6 @@
 				7EF3B31636371C143DDC839B /* Pods-NativeOne.debug.xcconfig */,
 				5302F3DAA81404BE98AD2CE2 /* Pods-NativeOne.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,6 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7962836424B6F3D90086D8D1 /* NativeViewControllerTwo.m in Sources */,
+				7962836124B6F28C0086D8D1 /* FlutterHomeViewController.m in Sources */,
 				7962834E24B6C0FC0086D8D1 /* NativeViewControllerOne.m in Sources */,
 				7962834824B6C0FC0086D8D1 /* AppDelegate.m in Sources */,
 				7962835924B6C0FD0086D8D1 /* main.m in Sources */,
