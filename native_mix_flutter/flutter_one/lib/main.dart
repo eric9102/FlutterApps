@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     builder: (context){
                       return NewRoute();
                     },
-                    fullscreenDialog: true
+                    fullscreenDialog: false
                 )
                 );
               },
