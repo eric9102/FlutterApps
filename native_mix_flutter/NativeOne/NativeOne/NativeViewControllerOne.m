@@ -27,7 +27,8 @@
         ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
     FlutterViewController *flutterViewController =
         [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
-    [self presentViewController:flutterViewController animated:YES completion:nil];
+//    [self presentViewController:flutterViewController animated:YES completion:nil];
+    [self.navigationController pushViewController:flutterViewController animated:YES];
     
 }
 
