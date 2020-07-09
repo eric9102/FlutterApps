@@ -7,6 +7,8 @@
 //
 
 #import "NativeViewControllerTwo.h"
+#import "FlutterHomeViewController.h"
+#import "AppDelegate.h"
 
 @interface NativeViewControllerTwo ()
 
@@ -21,7 +23,16 @@
 
 - (IBAction)openFlutterPage:(id)sender {
     
+//    FlutterHomeViewController *vc = [[FlutterHomeViewController alloc]init];
+//    [vc setInitialRoute:@"flutter_page_two"];
+//    [self.navigationController pushViewController:vc animated:YES];
     
+    FlutterEngine *flutterEngine =
+        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
+    FlutterHomeViewController *flutterViewController =
+        [[FlutterHomeViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    [flutterViewController pushRoute:@"flutter_page_two"];
+    [self.navigationController pushViewController:flutterViewController animated:YES];
     
 }
 
