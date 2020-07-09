@@ -107,3 +107,23 @@ class NewRoute extends StatelessWidget{
     );
   }
 }
+
+class FlutterPageTwo extends StatelessWidget{
+  bool showBack;
+  FlutterPageTwo({Key key, this.showBack=false }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.greenAccent,
+      appBar: AppBar(
+        title: Text("FlutterPageTwo"),
+        leading: !showBack?null:IconButton(icon:Icon(Icons.arrow_back), onPressed:() => platform.invokeMethod('closeFlutterPage')
+        )),
+      body: Center(
+        child: Text("FlutterPageTwo"),
+      ),
+      );
+
+  }
+}

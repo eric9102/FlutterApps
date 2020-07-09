@@ -47,13 +47,30 @@
                     <view key="view" contentMode="scaleToFill" id="WCT-7K-Bst">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MER-mK-id0">
+                                <rect key="frame" x="0.0" y="253" width="414" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="rrb-Lf-RfK"/>
+                                </constraints>
+                                <state key="normal" title="打开flutter页面"/>
+                                <connections>
+                                    <action selector="openFlutterPage:" destination="gNI-Ki-aWO" eventType="touchUpInside" id="4nk-3y-76h"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MER-mK-id0" firstAttribute="leading" secondItem="iRm-1Q-yL7" secondAttribute="leading" id="AgS-C8-EAK"/>
+                            <constraint firstItem="MER-mK-id0" firstAttribute="trailing" secondItem="iRm-1Q-yL7" secondAttribute="trailing" id="Wjg-On-Bup"/>
+                            <constraint firstItem="MER-mK-id0" firstAttribute="top" secondItem="iRm-1Q-yL7" secondAttribute="top" constant="209" id="wSe-xN-sfa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iRm-1Q-yL7"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5oB-Ot-ANF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730" y="64"/>
+            <point key="canvasLocation" x="1728.985507246377" y="63.616071428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b0x-bC-sKl">
