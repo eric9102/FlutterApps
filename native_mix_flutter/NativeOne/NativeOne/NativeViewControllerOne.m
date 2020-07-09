@@ -6,6 +6,8 @@
 //  Copyright © 2020 李雪峰. All rights reserved.
 //
 
+@import Flutter;
+#import "AppDelegate.h"
 #import "NativeViewControllerOne.h"
 
 @interface NativeViewControllerOne ()
@@ -21,6 +23,11 @@
 
 - (IBAction)goFlutterPageOne:(id)sender {
     
+    FlutterEngine *flutterEngine =
+        ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
+    FlutterViewController *flutterViewController =
+        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    [self presentViewController:flutterViewController animated:YES completion:nil];
     
 }
 
