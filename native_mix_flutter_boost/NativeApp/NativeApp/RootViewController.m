@@ -22,7 +22,7 @@
 
 - (IBAction)goFlutterOnePage:(id)sender {
     
-    [FlutterBoostPlugin open:@"first" urlParams:@{kPageCallBackId:@"MycallbackId#1"} exts:@{@"animated":@(YES)} onPageFinished:^(NSDictionary *result) {
+    [FlutterBoostPlugin open:@"first_page" urlParams:@{kPageCallBackId:@"MycallbackId#1"} exts:@{@"animated":@(YES)} onPageFinished:^(NSDictionary *result) {
         NSLog(@"call me when page finished, and your result is:%@", result);
     } completion:^(BOOL f) {
         NSLog(@"page is opened");
