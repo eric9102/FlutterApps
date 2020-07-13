@@ -7,7 +7,7 @@
 //
 
 #import "PlatformRouterImp.h"
-//#import "UIViewControllerDemo.h"
+#import "UIViewControllerDemo.h"
 #import <flutter_boost/FlutterBoost.h>
 
 @interface PlatformRouterImp()
@@ -18,14 +18,14 @@
 - (void)openNativeVC:(NSString *)name
            urlParams:(NSDictionary *)params
                 exts:(NSDictionary *)exts{
-//    UIViewController *vc = UIViewControllerDemo.new;
-//    BOOL animated = [exts[@"animated"] boolValue];
-//    if([params[@"present"] boolValue]){
-//        [self.navigationController presentViewController:vc animated:animated completion:^{
-//        }];
-//    }else{
-//        [self.navigationController pushViewController:vc animated:animated];
-//    }
+    UIViewController *vc = UIViewControllerDemo.new;
+    BOOL animated = [exts[@"animated"] boolValue];
+    if([params[@"present"] boolValue]){
+        [self.navigationController presentViewController:vc animated:animated completion:^{
+        }];
+    }else{
+        [self.navigationController pushViewController:vc animated:animated];
+    }
 }
 
 #pragma mark - Boost 1.5

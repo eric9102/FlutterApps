@@ -16,6 +16,9 @@
 		7911CA6224BCA55900D6D5EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7911CA6124BCA55900D6D5EF /* main.m */; };
 		7911CA6A24BCA9B400D6D5EF /* FLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7911CA6924BCA9B400D6D5EF /* FLNavigationController.m */; };
 		797DD67A24BCC4BE0074DDBB /* PlatformRouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 797DD67924BCC4BE0074DDBB /* PlatformRouterImp.m */; };
+		797DD67D24BCCA560074DDBB /* NativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797DD67B24BCCA560074DDBB /* NativeViewController.m */; };
+		797DD68124BCCB890074DDBB /* UIViewControllerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797DD67F24BCCB880074DDBB /* UIViewControllerDemo.xib */; };
+		797DD68224BCCB890074DDBB /* UIViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 797DD68024BCCB880074DDBB /* UIViewControllerDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,11 @@
 		7911CA6924BCA9B400D6D5EF /* FLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLNavigationController.m; sourceTree = "<group>"; };
 		797DD67824BCC4BE0074DDBB /* PlatformRouterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformRouterImp.h; sourceTree = "<group>"; };
 		797DD67924BCC4BE0074DDBB /* PlatformRouterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformRouterImp.m; sourceTree = "<group>"; };
+		797DD67B24BCCA560074DDBB /* NativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeViewController.m; sourceTree = "<group>"; };
+		797DD67C24BCCA560074DDBB /* NativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeViewController.h; sourceTree = "<group>"; };
+		797DD67E24BCCB880074DDBB /* UIViewControllerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerDemo.h; sourceTree = "<group>"; };
+		797DD67F24BCCB880074DDBB /* UIViewControllerDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIViewControllerDemo.xib; sourceTree = "<group>"; };
+		797DD68024BCCB880074DDBB /* UIViewControllerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,11 @@
 		7911CA4E24BCA55800D6D5EF /* flutter_boost_native */ = {
 			isa = PBXGroup;
 			children = (
+				797DD67E24BCCB880074DDBB /* UIViewControllerDemo.h */,
+				797DD68024BCCB880074DDBB /* UIViewControllerDemo.m */,
+				797DD67F24BCCB880074DDBB /* UIViewControllerDemo.xib */,
+				797DD67C24BCCA560074DDBB /* NativeViewController.h */,
+				797DD67B24BCCA560074DDBB /* NativeViewController.m */,
 				797DD67824BCC4BE0074DDBB /* PlatformRouterImp.h */,
 				797DD67924BCC4BE0074DDBB /* PlatformRouterImp.m */,
 				7911CA4F24BCA55800D6D5EF /* AppDelegate.h */,
@@ -168,6 +181,7 @@
 				7911CA5F24BCA55900D6D5EF /* LaunchScreen.storyboard in Resources */,
 				7911CA5C24BCA55900D6D5EF /* Assets.xcassets in Resources */,
 				7911CA5A24BCA55800D6D5EF /* Main.storyboard in Resources */,
+				797DD68124BCCB890074DDBB /* UIViewControllerDemo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7911CA5724BCA55800D6D5EF /* FirstViewController.m in Sources */,
+				797DD68224BCCB890074DDBB /* UIViewControllerDemo.m in Sources */,
 				7911CA6A24BCA9B400D6D5EF /* FLNavigationController.m in Sources */,
 				7911CA5124BCA55800D6D5EF /* AppDelegate.m in Sources */,
 				797DD67A24BCC4BE0074DDBB /* PlatformRouterImp.m in Sources */,
 				7911CA6224BCA55900D6D5EF /* main.m in Sources */,
+				797DD67D24BCCA560074DDBB /* NativeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
