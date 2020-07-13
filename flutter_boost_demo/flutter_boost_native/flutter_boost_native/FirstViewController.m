@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+#import <Flutter/Flutter.h>
+#import <flutter_boost/FlutterBoostPlugin.h>
 
 @interface FirstViewController ()
 
@@ -19,5 +21,14 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)openFlutterOne:(id)sender {
+    
+    [FlutterBoostPlugin open:@"first" urlParams:@{kPageCallBackId:@"MycallbackId#1"} exts:@{@"animated":@(YES)} onPageFinished:^(NSDictionary *result) {
+        NSLog(@"call me when page finished, and your result is:%@", result);
+    } completion:^(BOOL f) {
+        NSLog(@"page is opened");
+    }];
+    
+}
 
 @end

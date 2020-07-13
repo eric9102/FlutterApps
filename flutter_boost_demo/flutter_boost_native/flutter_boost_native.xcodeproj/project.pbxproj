@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		7911CA5F24BCA55900D6D5EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7911CA5D24BCA55900D6D5EF /* LaunchScreen.storyboard */; };
 		7911CA6224BCA55900D6D5EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7911CA6124BCA55900D6D5EF /* main.m */; };
 		7911CA6A24BCA9B400D6D5EF /* FLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7911CA6924BCA9B400D6D5EF /* FLNavigationController.m */; };
+		797DD67A24BCC4BE0074DDBB /* PlatformRouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 797DD67924BCC4BE0074DDBB /* PlatformRouterImp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		7911CA6124BCA55900D6D5EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7911CA6824BCA9B400D6D5EF /* FLNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLNavigationController.h; sourceTree = "<group>"; };
 		7911CA6924BCA9B400D6D5EF /* FLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLNavigationController.m; sourceTree = "<group>"; };
+		797DD67824BCC4BE0074DDBB /* PlatformRouterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformRouterImp.h; sourceTree = "<group>"; };
+		797DD67924BCC4BE0074DDBB /* PlatformRouterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformRouterImp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 		7911CA4E24BCA55800D6D5EF /* flutter_boost_native */ = {
 			isa = PBXGroup;
 			children = (
+				797DD67824BCC4BE0074DDBB /* PlatformRouterImp.h */,
+				797DD67924BCC4BE0074DDBB /* PlatformRouterImp.m */,
 				7911CA4F24BCA55800D6D5EF /* AppDelegate.h */,
 				7911CA5024BCA55800D6D5EF /* AppDelegate.m */,
 				7911CA5524BCA55800D6D5EF /* FirstViewController.h */,
@@ -97,7 +102,6 @@
 				3107D71907095478732DB847 /* Pods-flutter_boost_native.debug.xcconfig */,
 				73889A5D2329C406E01FAB55 /* Pods-flutter_boost_native.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,6 +239,7 @@
 				7911CA5724BCA55800D6D5EF /* FirstViewController.m in Sources */,
 				7911CA6A24BCA9B400D6D5EF /* FLNavigationController.m in Sources */,
 				7911CA5124BCA55800D6D5EF /* AppDelegate.m in Sources */,
+				797DD67A24BCC4BE0074DDBB /* PlatformRouterImp.m in Sources */,
 				7911CA6224BCA55900D6D5EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
