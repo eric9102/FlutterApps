@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
   void _onRoutePushed(
     String pageName,
     String uniqueId,
-    Map<String, dynamic> params,
+    Map<dynamic, dynamic> params,
     Route<dynamic> route,
     Future<dynamic> _,
   ) {}
