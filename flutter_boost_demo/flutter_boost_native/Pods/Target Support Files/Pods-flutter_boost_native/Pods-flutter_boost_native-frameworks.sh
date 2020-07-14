@@ -198,6 +198,7 @@ fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/../../my_flutter/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${PODS_ROOT}/Reveal-SDK/RevealServer/iOS/RevealServer.framework"
   install_framework "${PODS_ROOT}/../../my_flutter/.ios/Flutter/App.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then

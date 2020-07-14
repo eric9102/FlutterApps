@@ -11,6 +11,7 @@ target 'flutter_boost_native' do
   
 install_all_flutter_pods(flutter_application_path)
 
+pod 'Reveal-SDK', :configurations => ['Debug']
 
 end
 
