@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2TqXv+T+1hcAi+sItO1yqxMZDnY=
+		KVRE+icWWattIxwSLkaeZU55jms=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Scripts/copy_and_codesign_revealserver.sh</key>
 		<data>
-		PPHfl28b097AuN5CiNfk56kWWdU=
+		yB2zXTggmRD0rra2Hbpxn2zfCRo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -49,11 +49,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PPHfl28b097AuN5CiNfk56kWWdU=
+			yB2zXTggmRD0rra2Hbpxn2zfCRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			HM57SY1B/GtO6WiGtQIEycuwDHrXKsIpKnMYW89dcSo=
+			SL0x5cGSOyS1RcojHFEmFX5IDfon/vO37cFsjSIX7LA=
 			</data>
 		</dict>
 	</dict>
