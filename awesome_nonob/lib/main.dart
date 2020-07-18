@@ -5,6 +5,7 @@ import 'package:awesome_nonob/TabPageTwo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'dart:io';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +30,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (defaultTargetPlatform == TargetPlatform.android) {
+    if (Platform.isAndroid) {
       return DefaultTabController(
         length: 4,
         child: Scaffold(
