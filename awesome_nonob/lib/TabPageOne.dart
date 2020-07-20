@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ListView.dart';
 
 class TabPageOne extends StatefulWidget {
   TabPageOne({Key key}) : super(key: key);
@@ -14,8 +15,21 @@ class _TabPageOneState extends State<TabPageOne> {
         appBar: AppBar(
           title: Text("Home"),
         ),
-        body: Container(
-          child: Text("first"),
+        body: ListView(
+          scrollDirection: Axis.vertical,
+          itemExtent: 60, //行高
+          children: <Widget>[
+            Align(
+              alignment: Alignment.centerLeft,
+              child: FlatButton(
+                  onPressed: () => Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ListView())),
+                  child: Text(
+                    "ListView",
+                    style: TextStyle(fontSize: 20.0, color: Colors.black),
+                  )),
+            )
+          ],
         ));
   }
 }
