@@ -5,10 +5,9 @@ class ListViewBuilderDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("ListViewBuilder"),),
-      body: ListView.builder(itemBuilder: (BuildContext context, int index){
-return null;
-      })),
-    );
+        appBar: AppBar(
+          title: Text("ListViewBuilder"),
+        ),
+        body: Text("abc"));
   }
 }
