@@ -12,19 +12,33 @@ class TabPageOne extends StatefulWidget {
 class _TabPageOneState extends State<TabPageOne> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text("Home"),
+    return CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+          middle: Text('Home'),
         ),
-        body: ListView(
+        child: ListView(
           scrollDirection: Axis.vertical,
           // itemExtent: 60, //行高
           children: <Widget>[
             Card(
               child: ListTile(
+                leading: Icon(Icons.add_circle),
+                title: Text('编写您的第一个Flutter App'),
+                onTap: () {},
+              ),
+            ),
+            Card(
+              child: ListTile(
                 leading: FlutterLogo(),
                 title: Text('路由'),
                 trailing: Icon(Icons.more_vert),
+                onTap: () {},
+              ),
+            ),
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.comment),
+                title: Text('Common Widgets'),
                 onTap: () {},
               ),
             ),
@@ -40,7 +54,7 @@ class _TabPageOneState extends State<TabPageOne> {
                   }));
                 },
               ),
-            )
+            ),
           ],
         ));
   }
