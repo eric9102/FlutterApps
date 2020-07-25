@@ -32,6 +32,12 @@ class _TabPageOneState extends State<TabPageOne> {
                     "ListView",
                     style: TextStyle(fontSize: 20.0, color: Colors.black),
                   )),
+            ),
+            Card(
+              child: ListTile(
+                leading: FlutterLogo(),
+                title: Text('ListView'),
+              ),
             )
           ],
         ));
