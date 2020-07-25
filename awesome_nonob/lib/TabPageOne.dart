@@ -18,25 +18,27 @@ class _TabPageOneState extends State<TabPageOne> {
         ),
         body: ListView(
           scrollDirection: Axis.vertical,
-          itemExtent: 60, //行高
+          // itemExtent: 60, //行高
           children: <Widget>[
-            Align(
-              alignment: Alignment.centerLeft,
-              child: FlatButton(
-                  onPressed: () =>
-                      Navigator.of(context, rootNavigator: true).push(
-                          CupertinoPageRoute(builder: (BuildContext context) {
-                        return ListViewBuilderDemo();
-                      })),
-                  child: Text(
-                    "ListView",
-                    style: TextStyle(fontSize: 20.0, color: Colors.black),
-                  )),
+            Card(
+              child: ListTile(
+                leading: FlutterLogo(),
+                title: Text('路由'),
+                trailing: Icon(Icons.more_vert),
+                onTap: () {},
+              ),
             ),
             Card(
               child: ListTile(
                 leading: FlutterLogo(),
                 title: Text('ListView'),
+                subtitle: Text('This is a ListView'),
+                onTap: () {
+                  Navigator.of(context, rootNavigator: true)
+                      .push(CupertinoPageRoute(builder: (BuildContext context) {
+                    return ListViewBuilderDemo();
+                  }));
+                },
               ),
             )
           ],
