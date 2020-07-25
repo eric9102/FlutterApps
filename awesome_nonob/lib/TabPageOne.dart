@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'ListView.dart';
 
@@ -22,10 +23,11 @@ class _TabPageOneState extends State<TabPageOne> {
             Align(
               alignment: Alignment.centerLeft,
               child: FlatButton(
-                  onPressed: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => ListViewBuilderDemo())),
+                  onPressed: () =>
+                      Navigator.of(context, rootNavigator: true).push(
+                          CupertinoPageRoute(builder: (BuildContext context) {
+                        return ListViewBuilderDemo();
+                      })),
                   child: Text(
                     "ListView",
                     style: TextStyle(fontSize: 20.0, color: Colors.black),
