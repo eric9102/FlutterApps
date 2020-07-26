@@ -14,6 +14,30 @@ class _RandomWordsState extends State<RandomWords> {
   final _saved = Set<WordPair>();
   final _biggerFont = const TextStyle(fontSize: 18.0);
 
+  void _pushSaved() {
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+      final tiles = _saved.map((pair) {
+        return ListTile(
+          title: Text(
+            pair.asPascalCase,
+            style: _biggerFont,
+          ),
+        );
+      });
+      final divided =
+          ListTile.divideTiles(tiles: tiles, context: context).toList();
+      return Scaffold(
+        appBar: PreferredSize(
+            child: AppBar(
+              title: Text('Saved Suggestions'),
+              elevation: 0.5,
+            ),
+            preferredSize: Size.fromHeight(44)),
+        body: ListView(children: divided),
+      );
+    }));
+  }
+
   Widget _buildRow(WordPair pair) {
     final alreadySaved = _saved.contains(pair);
     return ListTile(
