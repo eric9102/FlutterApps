@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'ListView.dart';
+import 'BasicWidgets/ListView.dart';
+import 'BasicWidgets/FirstFlutterApp.dart';
 
 class TabPageOne extends StatefulWidget {
   TabPageOne({Key key}) : super(key: key);
@@ -24,7 +25,12 @@ class _TabPageOneState extends State<TabPageOne> {
               child: ListTile(
                 leading: Icon(Icons.add_circle),
                 title: Text('编写您的第一个Flutter App'),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context, rootNavigator: true)
+                      .push(CupertinoPageRoute(builder: (BuildContext context) {
+                    return RandomWords();
+                  }));
+                },
               ),
             ),
             Card(
