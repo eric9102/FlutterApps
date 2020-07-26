@@ -10,6 +10,32 @@ class RandomWords extends StatefulWidget {
 }
 
 class _RandomWordsState extends State<RandomWords> {
+  final _suggestions = <WordPair>[];
+  final _biggerFont = const TextStyle(fontSize: 18.0);
+
+  Widget _buildRow(WordPair pair) {
+    return ListTile(
+      title: Text(
+        pair.asPascalCase,
+        style: _biggerFont,
+      ),
+    );
+  }
+
+  Widget _buildSuggestions() {
+    // ignore: missing_return
+    return ListView.builder(
+        padding: const EdgeInsets.all(16.0),
+        itemBuilder: (BuildContext context, int i) {
+          if (i.isOdd) return Divider();
+          final index = i ~/ 2;
+          if (index >= _suggestions.length) {
+            _suggestions.addAll(generateWordPairs().take(10));
+          }
+          return _buildRow(_suggestions[index]);
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     final wordPair = WordPair.random();
@@ -18,10 +44,10 @@ class _RandomWordsState extends State<RandomWords> {
       appBar: PreferredSize(
           child: AppBar(
             title: Text(wordPair.asPascalCase),
-            elevation: 0,
+            elevation: 0.5,
           ),
           preferredSize: Size.fromHeight(44)),
-      body: Text(wordPair.asPascalCase),
+      body: _buildSuggestions(),
     );
   }
 }
