@@ -1,3 +1,4 @@
+import 'package:awesome_nonob/BasicWidgets/ContainerWidgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'BasicWidgets/ListView.dart';
@@ -58,7 +59,12 @@ class _TabPageOneState extends State<TabPageOne> {
               child: ListTile(
                 leading: Icon(Icons.wallpaper),
                 title: Text('Container Widgets'),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context, rootNavigator: true)
+                      .push(CupertinoPageRoute(builder: (BuildContext context) {
+                    return ContainerDemo();
+                  }));
+                },
               ),
             ),
             Card(
