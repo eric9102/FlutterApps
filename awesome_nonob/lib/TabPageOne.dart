@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'BasicWidgets/ListView.dart';
 import 'BasicWidgets/FirstFlutterApp.dart';
+import 'BasicWidgets/LayoutWidgets.dart';
 
 class TabPageOne extends StatefulWidget {
   TabPageOne({Key key}) : super(key: key);
@@ -43,8 +44,20 @@ class _TabPageOneState extends State<TabPageOne> {
             ),
             Card(
               child: ListTile(
-                leading: Icon(Icons.comment),
-                title: Text('Common Widgets'),
+                leading: Icon(Icons.cloud_circle),
+                title: Text('Layout Widgets'),
+                onTap: () {
+                  Navigator.of(context, rootNavigator: true)
+                      .push(CupertinoPageRoute(builder: (BuildContext context) {
+                    return LayoutDemo();
+                  }));
+                },
+              ),
+            ),
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.wallpaper),
+                title: Text('Container Widgets'),
                 onTap: () {},
               ),
             ),
@@ -59,6 +72,13 @@ class _TabPageOneState extends State<TabPageOne> {
                     return ListViewBuilderDemo();
                   }));
                 },
+              ),
+            ),
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.beach_access),
+                title: Text('Function Widgets'),
+                onTap: () {},
               ),
             ),
           ],
