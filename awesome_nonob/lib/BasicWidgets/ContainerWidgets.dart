@@ -144,6 +144,7 @@ class DecoratedBoxDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: mNavBar,
+      body: DecoratedBox(decoration: null),
     );
   }
 }
